@@ -1,0 +1,129 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/* CSS HEADER */
+.menu {
+    background: linear-gradient(lightblue, blue);
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu > li {
+    border-right: 1px solid blue;
+}
+
+.menu > li:last-child {
+    border-right: none;
+}
+
+.menu > li > a{
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+    color: white;
+}
+
+
+
+.menu > li > a:hover{
+    background-color: darkblue;   
+}
+
+.submenu {
+    display:none;
+    position: absolute;
+    z-index: 9999;
+}
+
+.sub:hover .submenu{
+    display: block; 
+}
+
+.danhMuc {
+    text-align: center;
+    color: blue;
+    font-weight: bold;
+    padding: 10px;
+    text-transform: uppercase;
+    text-shadow: 1px 2px blueviolet;
+}
+
+.searchBox {
+    display: block;
+    padding: 1rem;
+    width: 95%;
+    margin: 0 auto ;
+    
+}
+
+/* CSS BODY */
+.books{
+    
+}
+.books > div{
+    position: relative;
+
+}
+
+.book {
+    width: 25%; 
+}
+
+
+.book > div {
+    border: 1px solid darkblue;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 0.6rem;
+    transition: transform 0.5s;
+}
+
+.book > div:hover {
+    transform: scale(1.1);
+}
+
+.book img{
+    width: 100%;
+ }
+
+.close{
+    position: absolute;
+    top: 0.7rem;
+    right: 1rem;
+    text-decoration: none;
+    color: darkblue;
+    font-size: larger;
+}
+
+
+
+/* CSS FOOTER */
+footer {
+    background: linear-gradient(blue, white, darkblue);
+    padding: 2rem;
+    overflow: hidden;
+    
+}
+
+footer > span{
+    position: relative;
+    animation: move 10s infinite;
+    
+}
+
+@keyframes move {
+    from{
+        left: 0%;
+    }
+    to{
+        left: 100%;
+    }
+}
