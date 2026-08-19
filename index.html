@@ -7,6 +7,10 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" rel="stylesheet"/>
     <link href="images/logo.png" rel="shortcut icon" />
     <link href="css/book.css" rel="stylesheet" />
+    <link href="css/modal.css" rel="stylesheet" />
+    <script src="js/book.js" defer></script>
+
+
 </head>
 <body>
    
@@ -24,7 +28,7 @@
         </li>
         <li><a href="forum.html" target="_blank"><i class="fa-brands fa-discourse"></i> Diễn đàn</a></li>
         <li>
-            <button class="btn btn-success"><i class="fa-solid fa-user-plus"></i> Đăng ký</button>
+            <button class="btn btn-success" onclick="openRegisterModal(this)" rel="registerModal"><i class="fa-solid fa-user-plus"></i> Đăng ký</button>
             <button class="btn btn-info"><i class="fa-solid fa-right-to-bracket"></i> Đăng nhập</button>
         </li>
     </ul>
@@ -32,7 +36,7 @@
 </nav>
 </header>
 
-    <input class="searchBox" type="text" placeholder="Nhập từ khóa"/>
+    <input id="searchBox" class="searchBox" type="text" placeholder="Nhập từ khóa"/>
 
 
 
@@ -90,5 +94,31 @@
     <footer>
         <span>OU WEB DESIGN &copy; 2026</span>
     </footer>
+
+   <div class="modal modal-hide" id="registerModal">
+        <div class="modal-content">
+            <a href="#" class="modal-close" onclick="closeRegisterModal(this)" rel="registerModal">&times;</a>
+            <div class="control">
+                <p>Họ tên: </p>
+                <input type="text" placeholder="Họ tên..." class="input-control"/>
+            </div>            
+            <div class="control">
+                <p>Username:  </p>
+                <input type="text" placeholder="Username..." class="input-control"/>
+            </div>
+            <div class="control">
+                <p>Mật khẩu: </p>
+                <input type="password" placeholder="Mật khẩu..." class="input-control"/>
+            </div>
+            <div class="control">
+                <p>Xác nhận mật khẩu: </p>
+                <input type="password" placeholder="Xác nhận mật khẩu..." class="input-control"/>
+            </div>
+            <div class="control btn-control">
+                <button class="btn btn-success ">Đăng ký</button>
+            </div>
+        </div>
+   </div>
+
 </body>
 </html>

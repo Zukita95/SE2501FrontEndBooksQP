@@ -4,7 +4,7 @@
 
 .flex {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap:wrap;
 }
 
 
@@ -12,7 +12,7 @@
 .menu {
     background: linear-gradient(lightblue, blue);
     list-style-type: none;
-    padding: 0;
+    padding: 0px;
     margin: 0;
 }
 
@@ -34,7 +34,14 @@
 
 
 .menu > li > a:hover{
-    background-color: darkblue;   
+    background-color: darkblue;  
+}
+
+.menu > li:nth-child(4){
+    margin-left: auto;
+    margin-right: 5px;
+    margin-top: 4px;
+
 }
 
 .submenu {
@@ -46,6 +53,8 @@
 .sub:hover .submenu{
     display: block; 
 }
+
+
 
 .danhMuc {
     text-align: center;
@@ -61,6 +70,7 @@
     padding: 1rem;
     width: 95%;
     margin: 0 auto ;
+    margin-bottom: 2rem;
     
 }
 
@@ -101,6 +111,23 @@
     text-decoration: none;
     color: darkblue;
     font-size: larger;
+}
+
+/* CSS BUTTON*/
+.btn {
+    border-radius: 5px;
+    padding: 0.7rem;
+}
+
+.btn-success {
+    background-color: lightgreen;
+    border: 2px solid gray;
+    
+}
+
+.btn-info{
+    background-color: aliceblue;
+    border: 2px solid gray;
 }
 
 

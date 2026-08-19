@@ -1,0 +1,135 @@
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --my-padding: 1rem;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.content {
+    padding: var(--my-padding);
+
+}
+
+
+
+.col20{
+    width: 20%;
+    padding: var(--my-padding);
+}
+
+.thumbs > img{
+    width: 20%;
+    
+}
+
+.thumbs > div:hover{
+    transform: scale(1.2);
+}
+
+.thumbs{
+    flex-wrap: nowrap;
+    margin-top: 0.2rem;
+}
+.thumbs> div{
+    margin: 2px;
+}
+
+.col80{
+    width: 80%;
+    padding: var(--my-padding);
+    
+}
+
+.col20 img {
+    width: 100%;
+}
+
+.subtitle::after {
+    content: " ";
+    border: 2px solid blue ;
+    display: block;
+    margin-top: 2px;
+}
+
+.subtitle{
+    padding: 1rem 0 0 0;
+    
+    border-bottom: none;
+
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.rating {
+    list-style-type: none;
+    padding: 0;
+}
+
+.rating > li > a{
+    text-decoration: none;
+}
+
+.selected-rate {
+    color: gold;
+}
+
+
+.review-form textarea {
+    width: 100%;
+    height: 3rem;
+    padding: var(--my-padding);
+}
+
+.add-comment {
+    background-color: darkblue;
+    color: white;
+    padding: var(--my-padding);
+    border: 1px solid transparent
+}
+
+.submit-btn {
+    text-align: right;
+}
+
+/* Comment*/
+
+.comment-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.comment{
+    background-color: lightblue;
+    padding: 0.7rem;
+    border: 2px solid blue;
+    border-radius: 20px;
+    margin: 10px;
+}
+.col10{
+    width: 10%;
+}
+.col90{
+    width: 90%;
+    padding-left: var(--my-padding);
+}
+
+.col10 > img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.col90 > p{
+    font-style: italic;
+}
+
+.col90 > .user-name{
+    text-decoration: none;
+}

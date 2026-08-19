@@ -1,0 +1,57 @@
+.modal{
+    background-color: rgba(97, 97, 105, 0.7);
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    position: fixed;
+    transition: opacity .5s, visibility .5s;
+}
+
+.modal-show{
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal-hide{
+    visibility: hidden;
+    opacity: 0;
+}
+
+.modal-content {
+    background-color: white;
+    width: 30%;
+    padding: 1.5rem;
+    margin: 100px auto;
+    border: 3px solid darkblue ;
+    border-radius: 1rem;
+    position: relative;
+}
+
+.control > p{
+    margin-bottom: 0.5rem;
+}
+
+.input-control{
+    width: 80%;
+    padding: 0.6rem;
+}
+
+.btn-control {
+    text-align: right;
+    margin-top: 1rem;
+    
+}
+
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    color: red;
+    font-size: 2rem;
+}
+
+.error{
+    border-color: red;
+}
