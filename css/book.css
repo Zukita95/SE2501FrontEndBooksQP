@@ -7,6 +7,10 @@
     flex-wrap:wrap;
 }
 
+.fa-spinner{
+    margin: 10% auto;
+    font-size: 5rem;
+}
 
 /* CSS HEADER */
 .menu {
@@ -65,14 +69,15 @@
     text-shadow: 1px 2px blueviolet;
 }
 
+/* Search */
 .searchBox {
     display: block;
     padding: 1rem;
     width: 95%;
     margin: 0 auto ;
-    margin-bottom: 2rem;
-    
+    margin-bottom: 1rem;
 }
+
 
 /* CSS BODY */
 .books{
